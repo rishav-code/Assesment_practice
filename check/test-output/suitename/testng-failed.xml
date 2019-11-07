@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" verbose="2" name="Failed suite [suitename]" parallel="tests">
+  <test thread-count="3" verbose="2" name="Test validate ie(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <parameter name="url" value="https://www.phptravels.net/"/>
+    <classes>
+      <class name="com.atmecs.testscripts.PhpFlowScript">
+        <methods>
+          <include name="intitailizeBrowser"/>
+          <include name="test" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.atmecs.testscripts.PhpFlowScript -->
+    </classes>
+  </test> <!-- Test validate ie(failed) -->
+</suite> <!-- Failed suite [suitename] -->
